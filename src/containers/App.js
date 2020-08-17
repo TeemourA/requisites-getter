@@ -14,6 +14,7 @@ class App extends Component {
       adress: '',
       phone: '',
       ceo: '',
+      email: '',
     },
     termsOfUse: '',
   };
@@ -36,6 +37,7 @@ class App extends Component {
     const inputName = e.target.name;
     const newRequisites = {...this.state.requisites};
     newRequisites[inputName] = e.target.value;
+    
     this.setState({ requisites: newRequisites});
   }
 
