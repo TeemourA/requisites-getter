@@ -4,10 +4,15 @@ import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js';
 
 const form = (props) => {
   return (
-    <form>
-      {props.active === 'legal' ? <Legal /> : <Enterpreneur />}
-      <button type="submit">Отправить</button>
-    </form>
+      <form action="https://formspree.io/xpzyeaka" method="POST">
+          {props.active === 'legal' ?
+          <Legal requisites={props.requisites} handleChange={props.handleChange}/> :
+          <Enterpreneur requisites={props.requisites} handleChange={props.handleChange}/>}
+
+          {/*<textarea name="Пользовательское соглашение" value={}/>*/}
+
+          <button type="submit">Отправить</button>
+      </form>
   );
 };
 
