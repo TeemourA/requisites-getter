@@ -5,8 +5,20 @@ import ControlPanel from '../components/ControlPanel/ControlPanel.js';
 
 class App extends Component {
   state = {
-    activeForm: 'entepreneur'
-  }
+    activeForm: 'entepreneur',
+    requisites: {
+      name: '',
+      itn: '',
+      psrn: '',
+      iac: '',
+      adress: '',
+      phone: '',
+      ceo: '',
+    },
+    termsOfUse: '',
+  };
+
+
 
   toggleEnterpreneurForm() {
     this.setState({
@@ -20,6 +32,13 @@ class App extends Component {
     })
   }
 
+  handleChange = (e) => {
+    const inputName = e.target.name;
+    const newRequisites = {...this.state.requisites};
+    newRequisites[inputName] = e.target.value;
+    this.setState({ requisites: newRequisites});
+  }
+
   render() {
     return (
       <div className="App">
@@ -27,7 +46,12 @@ class App extends Component {
         <ControlPanel 
         showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
         showLegalForm={() => this.toggleLegalForm()} />
-        <Form active={this.state.activeForm} />
+        <Form
+        active={this.state.activeForm}
+        requisites={this.state.requisites}
+        handleChange={this.handleChange}
+        termsOfUse={this.state.termsOfUse}
+        />
       </div>
     );
   };
