@@ -1,31 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from '../components/Form/Form.js';
+import ControlPanel from '../components/ControlPanel/ControlPanel.js';
 
 class App extends Component {
   state = {
     activeForm: 'entepreneur'
   }
 
-  toggleFormHandler() {
-    if (this.state.activeForm === 'legal') {
-      this.setState({
-        activeForm: 'enterpreneuer'
-      })
-    } else {
-      this.setState({
-        activeForm: 'legal'
-      })
-    }
+  toggleEnterpreneurForm() {
+    this.setState({
+      activeForm: 'enterpreneuer'
+    })
+  }
+
+  toggleLegalForm() {
+    this.setState({
+      activeForm: 'legal'
+    })
   }
 
   render() {
-    const buttonTitle = this.state.activeForm === 'legal' ? 'ИП' : 'юридических лиц';
-
     return (
       <div className="App">
         <h2>Выберите тип организации(ООО или ИП) и заполните форму с реквизитами</h2>
-        <button onClick={() => this.toggleFormHandler()}>Выбрать форму для {buttonTitle}</button>
+        <ControlPanel 
+        showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
+        showLegalForm={() => this.toggleLegalForm()} />
         <Form active={this.state.activeForm} />
       </div>
     );

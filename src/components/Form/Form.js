@@ -4,10 +4,10 @@ import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js';
 
 const form = (props) => {
   return (
-    <div>
+    <form>
       {props.active === 'legal' ? <Legal /> : <Enterpreneur />}
-      <button type="submit"></button>
-    </div>
+      <button type="submit">Отправить</button>
+    </form>
   );
 };
 
