@@ -1,17 +1,15 @@
 import React from 'react';
 import Legal from './LegalForm/LegalForm.js';
-import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js'; 
+import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js';
+import Terms from '../Documents/TermsOfUse'
 
 const form = (props) => {
   return (
-      <form action="https://formspree.io/xpzyeaka" method="POST">
+      <form>
           {props.active === 'legal' ?
           <Legal requisites={props.requisites} handleChange={props.handleChange}/> :
           <Enterpreneur requisites={props.requisites} handleChange={props.handleChange}/>}
-
-          {/*<textarea name="Пользовательское соглашение" value={}/>*/}
-
-          <button type="submit">Отправить</button>
+          <Terms requisites={props.requisites}/>
       </form>
   );
 };
