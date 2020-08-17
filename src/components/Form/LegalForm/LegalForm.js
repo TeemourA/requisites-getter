@@ -3,7 +3,7 @@ import './LegalForm.css';
 
 const legal = () => {
   return (
-    <form className="Form">
+    <div className="Form">
       <h4 className="Form__title">Список реквизитов для юридических лиц</h4>
 
       <div className="Form__group">
@@ -41,7 +41,7 @@ const legal = () => {
         <label className="Form__label" htmlFor="phone">Генеральный директор</label>
       </div>
 
-    </form>
+    </div>
   );
 };
 

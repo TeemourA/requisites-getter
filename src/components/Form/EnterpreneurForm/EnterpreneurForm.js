@@ -3,7 +3,7 @@ import './EnterpreneurForm.css';
 
 const enterpreneur = () => {
   return (
-    <form className="Form">
+    <div className="Form">
       <h4 className="Form__title">Список реквизитов для индивидуальных предпринимателей</h4>
 
       <div className="Form__group">
@@ -31,7 +31,7 @@ const enterpreneur = () => {
         <label className="Form__label" htmlFor="phone">Номер телефона</label>
       </div>
 
-    </form>
+    </div>
   );
 };
 
