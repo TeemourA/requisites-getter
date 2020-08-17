@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Form.css';
+import './EnterpreneurForm.css';
 
 const enterpreneur = () => {
   return (

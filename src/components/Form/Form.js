@@ -1,6 +1,6 @@
 import React from 'react';
-import Legal from '../components/Form/LegalForm/LegalForm.js';
-import Enterpreneur from '../components/Form/EnterpreneurForm/EnterpreneurForm.js'; 
+import Legal from './LegalForm/LegalForm.js';
+import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js'; 
 
 const form = (props) => {
   return (
