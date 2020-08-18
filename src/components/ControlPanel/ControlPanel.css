@@ -20,6 +20,7 @@
   cursor: pointer;
   transition: all 0.3s;
   box-shadow: 0 4px 16px #cccccc;
+  outline: none;
 }
 
 .Control-panel__button:hover {
