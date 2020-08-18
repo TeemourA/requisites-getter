@@ -41,6 +41,11 @@ const legal = (props) => {
                 <label className="Form__label" htmlFor="phone">Генеральный директор</label>
             </div>
 
+            <div className="Form__group">
+                <input className="Form__input" type="email" inputMode="text" name="email" id="email" required placeholder=" "  onChange={props.handleChange} value={props.requisites.email}/>
+                <label className="Form__label" htmlFor="email">Email</label>
+            </div>
+
         </div>
     );
 };
