@@ -22,7 +22,7 @@ const enterpreneur = (props) => {
             </div>
 
             <div className="Form__group">
-                <input className="Form__input" type="text" inputMode="text" name="adress" id="adress" required placeholder=" " onChange={props.handleChange} value={props.requisites.adress}/>
+                <input className="Form__input" type="text" inputMode="text" name="address" id="address" required placeholder=" " onChange={props.handleChange} value={props.requisites.adress}/>
                 <label className="Form__label" htmlFor="adress">Юридический адрес</label>
             </div>
 

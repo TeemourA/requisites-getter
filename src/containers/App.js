@@ -11,7 +11,7 @@ class App extends Component {
       itn: '',
       psrn: '',
       iac: '',
-      adress: '',
+      address: '',
       phone: '',
       ceo: '',
     },
