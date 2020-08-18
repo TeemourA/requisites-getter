@@ -3,13 +3,13 @@
 }
 
 .Terms__title {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .Terms__text {
     resize: none;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     border-radius: 10px;
     outline: none;
     box-shadow: 0 4px 16px #cccccc;

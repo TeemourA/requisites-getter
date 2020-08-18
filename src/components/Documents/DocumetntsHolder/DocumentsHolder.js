@@ -4,6 +4,8 @@ import EnterpreneurTerms from '../TermsOfUse/TermsOfUseEnterpreneur';
 import LegalTerms from '../TermsOfUse/TermsOfUseLegal';
 import Return from '../TermsOfReturn/TermsOfReturn';
 import Feedback from '../FeedbackRequisites/FeedbackRequisites';
+import FeedbackStyles from '../FeedbackRequisitesStyles/FeedbackRequisitesStyles';
+
 
 const form = (props) => {
   return (
@@ -13,6 +15,7 @@ const form = (props) => {
         <EnterpreneurTerms requisites={props.requisites} />}
         <Return requisites={props.requisites} />
         <Feedback requisites={props.requisites} active={props.active}/>
+        <FeedbackStyles/>
     </div>
   );
 };

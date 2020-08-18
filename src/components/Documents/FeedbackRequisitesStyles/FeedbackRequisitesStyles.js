@@ -1,0 +1,60 @@
+import React from 'react';
+import './FeedbackRequisitesStyles.css';
+
+const feedbackRequisitesStyles = () => {
+  return (
+      <div className='Terms'>
+          <h2 className='Terms__title'>Реквизиты (Вставить в CSS)</h2>
+          <textarea name="Условия возврата" readOnly className="Terms__text" value={`
+    .requisites {
+    width: 80vw !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    list-style: none;
+}
+
+.requisites strong {
+    margin-right: 5px;
+}
+
+.requisite {
+    padding-top: 65px;
+    position: relative;
+    border-top: 1px solid #e9e9e9;
+}
+
+.requisite > li {
+    margin-left: 55px;
+}
+
+.requisite::after {
+    content: "i";
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #d3d3d3;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0 0 10px 16px;
+    line-height: 40px;
+}
+
+.requisite__title {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    font-family: Hauss, san-serif;
+    font-weight: bolder;
+}
+  `
+              } />
+      </div>
+)};
+
+
+export default feedbackRequisitesStyles;
+

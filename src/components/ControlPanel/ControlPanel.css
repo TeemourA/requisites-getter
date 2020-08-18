@@ -11,7 +11,7 @@
 }
 
 .Control-panel__button {
-  padding: 10px;
+  padding: 10px 15px;
   margin: 0 20px;
   border: none;
   border-radius: 5px;
@@ -21,8 +21,9 @@
   transition: all 0.3s;
   box-shadow: 0 4px 16px #cccccc;
   outline: none;
+  font-size: 20px;
 }
 
 .Control-panel__button:hover {
-  background: #005cbf;
+  background: #08478a;
 }

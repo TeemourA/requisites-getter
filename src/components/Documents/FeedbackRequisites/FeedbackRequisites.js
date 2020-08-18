@@ -11,8 +11,10 @@ const feedbackRequisites = (props) => {
   }
   return (
       <div className='Terms'>
-      <h2 className='Terms__title'>Реквизиты в обратной связи</h2>
+      <h2 className='Terms__title'>Реквизиты (вставить в Javascript)</h2>
       <textarea name="Условия возврата" readOnly className="Terms__text" value={`
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
+    <script>
         document.addEventListener('DOMContentLoaded', function(){
     if (!location.href.includes('checkout')) {
         const root = document.querySelector('.contact-info');
@@ -35,6 +37,7 @@ const feedbackRequisites = (props) => {
         })
     }
 });
+</script>     
       `} />
       </div>
 
