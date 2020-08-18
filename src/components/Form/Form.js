@@ -1,7 +1,7 @@
 import React from 'react';
 import Legal from './LegalForm/LegalForm.js';
 import Enterpreneur from './EnterpreneurForm/EnterpreneurForm.js';
-import Terms from '../Documents/TermsOfUse'
+import Documents from '../Documents/DocumetntsHolder/DocumentsHolder'
 
 const form = (props) => {
   return (
@@ -9,7 +9,7 @@ const form = (props) => {
           {props.active === 'legal' ?
           <Legal requisites={props.requisites} handleChange={props.handleChange}/> :
           <Enterpreneur requisites={props.requisites} handleChange={props.handleChange}/>}
-          <Terms requisites={props.requisites}/>
+          <Documents requisites={props.requisites}/>
       </form>
   );
 };

@@ -1,0 +1,6 @@
+.Documents {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
