@@ -27,7 +27,7 @@ const legal = (props) => {
             </div>
 
             <div className="Form__group">
-                <input className="Form__input" type="text" inputMode="text" name="address" id="address" required placeholder=" " autoComplete="off" onChange={props.handleChange} value={props.requisites.adress} />
+                <input className="Form__input" type="text" inputMode="text" name="address" id="address" required placeholder=" " autoComplete="off" onChange={props.handleChange} value={props.requisites.address} />
                 <label className="Form__label" htmlFor="phone">Юридический адресс</label>
             </div>
 
