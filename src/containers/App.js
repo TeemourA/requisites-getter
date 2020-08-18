@@ -5,7 +5,7 @@ import ControlPanel from '../components/ControlPanel/ControlPanel.js';
 
 class App extends Component {
   state = {
-    activeForm: 'entepreneur',
+    activeForm: 'entrepreneur',
     requisites: {
       name: '',
       itn: '',
@@ -16,12 +16,11 @@ class App extends Component {
       ceo: '',
       email: '',
     },
-    termsOfUse: '',
   };
 
 
 
-  toggleEnterpreneurForm() {
+  toggleEntrepreneurForm() {
     this.setState({
       activeForm: 'enterpreneuer'
     })
@@ -46,14 +45,13 @@ class App extends Component {
       <div className="App">
         <h2>Выберите тип организации и заполните форму с реквизитами</h2>
         <ControlPanel
-          showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
+          showEntrepreneurForm={() => this.toggleEntrepreneurForm()}
           showLegalForm={() => this.toggleLegalForm()}
         />
         <Form
           active={this.state.activeForm}
           requisites={this.state.requisites}
           handleChange={this.handleChange}
-          termsOfUse={this.state.termsOfUse}
         />
       </div>
     );
