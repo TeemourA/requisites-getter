@@ -35,25 +35,25 @@ class App extends Component {
 
   handleChange = (e) => {
     const inputName = e.target.name;
-    const newRequisites = {...this.state.requisites};
+    const newRequisites = { ...this.state.requisites };
     newRequisites[inputName] = e.target.value;
-    
-    this.setState({ requisites: newRequisites});
+
+    this.setState({ requisites: newRequisites });
   }
 
   render() {
     return (
       <div className="App">
         <h2>Выберите тип организации и заполните форму с реквизитами</h2>
-        <ControlPanel 
-        showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
-        showLegalForm={() => this.toggleLegalForm()}
+        <ControlPanel
+          showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
+          showLegalForm={() => this.toggleLegalForm()}
         />
         <Form
-        active={this.state.activeForm}
-        requisites={this.state.requisites}
-        handleChange={this.handleChange}
-        termsOfUse={this.state.termsOfUse}
+          active={this.state.activeForm}
+          requisites={this.state.requisites}
+          handleChange={this.handleChange}
+          termsOfUse={this.state.termsOfUse}
         />
       </div>
     );
