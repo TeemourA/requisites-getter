@@ -5,12 +5,12 @@ import Documents from '../Documents/DocumetntsHolder/DocumentsHolder'
 
 const form = (props) => {
   return (
-      <form>
-          {props.active === 'legal' ?
-          <Legal requisites={props.requisites} handleChange={props.handleChange}/> :
-          <Enterpreneur requisites={props.requisites} handleChange={props.handleChange}/>}
-          <Documents requisites={props.requisites}/>
-      </form>
+    <form>
+      {props.active === 'legal' ?
+        <Legal requisites={props.requisites} handleChange={props.handleChange} /> :
+        <Enterpreneur requisites={props.requisites} handleChange={props.handleChange} />}
+      <Documents requisites={props.requisites} />
+    </form>
   );
 };
 
