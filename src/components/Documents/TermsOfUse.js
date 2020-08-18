@@ -1,7 +1,7 @@
 import React from 'react';
 import './TermsOfUse.css';
 
-const terms = (props) => {
+const termsOfUse = (props) => {
 
     return (
         <div className="Terms">
