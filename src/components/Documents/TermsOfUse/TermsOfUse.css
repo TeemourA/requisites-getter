@@ -12,4 +12,7 @@
     height: 300px;
     border-radius: 10px;
     outline: none;
+    box-shadow: 0 4px 16px #cccccc;
+    border: none;
+    padding: 20px;
 }
