@@ -31,6 +31,11 @@ const enterpreneur = (props) => {
                 <label className="Form__label" htmlFor="phone">Номер телефона</label>
             </div>
 
+            <div className="Form__group">
+                <input className="Form__input" type="email" inputMode="text" name="email" id="email" required placeholder=" "  onChange={props.handleChange} value={props.requisites.email}/>
+                <label className="Form__label" htmlFor="email">Email</label>
+            </div>
+
         </div>
     );
 };
