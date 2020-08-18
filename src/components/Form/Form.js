@@ -9,7 +9,7 @@ const form = (props) => {
       {props.active === 'legal' ?
         <Legal requisites={props.requisites} handleChange={props.handleChange} /> :
         <Enterpreneur requisites={props.requisites} handleChange={props.handleChange} />}
-      <Documents active={props.active} requisites={props.requisites} />
+        <Documents requisites={props.requisites} active={props.active}/>
     </form>
   );
 };
