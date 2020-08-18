@@ -44,10 +44,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>Выберите тип организации(ООО или ИП) и заполните форму с реквизитами</h2>
+        <h2>Выберите тип организации и заполните форму с реквизитами</h2>
         <ControlPanel 
         showEnterpreneurForm={() => this.toggleEnterpreneurForm()}
-        showLegalForm={() => this.toggleLegalForm()} />
+        showLegalForm={() => this.toggleLegalForm()}
+        />
         <Form
         active={this.state.activeForm}
         requisites={this.state.requisites}
