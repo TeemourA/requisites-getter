@@ -1,8 +1,12 @@
 import React from 'react';
 import './TermsOfUse.css';
 
-const termsOfUse = (props) => {
-    return (<textarea name="Пользовательское соглашение" readOnly className="terms" value={`
+const terms = (props) => {
+
+    return (
+        <div className="Terms">
+            <h2 className="Terms__title">Пользовательское соглашение</h2>
+            <textarea name="Пользовательское соглашение" readOnly className="Terms__text" value={`
     <h5
     style="text-align: left; margin-bottom: 0.0001pt; font-family: Verdana; caret-color: rgb(108, 108, 108); line-height: normal;">
     <span style="font-weight: bolder;"><span times="" new="" roman",serif;mso-fareast-font-family:="" "times="" roman"
@@ -2317,7 +2321,9 @@ const termsOfUse = (props) => {
       style="font-size: 14px;"></span><span style="font-size: 14px;"></span><span style="font-size: 14px;"></span><span
       style="font-size: 14px;"></span><span style="font-size: 14px;"></span><span style="font-size: 14px;"></span><span
       style="font-size: 14px;"></span></p>
-    `}/>)
+    `}/>
+        </div>
+        )
 };
 
 export default termsOfUse;

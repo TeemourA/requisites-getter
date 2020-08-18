@@ -1,0 +1,15 @@
+.Terms {
+    margin-top: 20px;
+}
+
+.Terms__title {
+    font-size: 18px;
+}
+
+.Terms__text {
+    resize: none;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    outline: none;
+}
