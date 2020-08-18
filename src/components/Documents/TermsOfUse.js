@@ -1,7 +1,7 @@
 import React from 'react';
 import './TermsOfUse.css';
 
-const terms = (props) => {
+const termsOfUse = (props) => {
     return (<textarea name="Пользовательское соглашение" readOnly className="terms" value={`
     <h5
     style="text-align: left; margin-bottom: 0.0001pt; font-family: Verdana; caret-color: rgb(108, 108, 108); line-height: normal;">
@@ -2320,4 +2320,4 @@ const terms = (props) => {
     `}/>)
 };
 
-export default terms;
+export default termsOfUse;
