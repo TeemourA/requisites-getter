@@ -5,9 +5,9 @@ const feedbackRequisites = (props) => {
 
   let requisites = [];
   if (props.active === 'legal') {
-    requisites = [`Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРН: ${props.requisites.psrn}"`, `"КПП: ${props.requisites.iac}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`, `"Ген. директор: ${props.requisites.ceo}"`]
+    requisites = [`Наименование: ${props.requisites.name}`, `ИНН: ${props.requisites.itn}`, `ОГРН: ${props.requisites.psrn}`, `КПП: ${props.requisites.iac}`, `Юридический адрес: ${props.requisites.address}`, `Телефон: ${props.requisites.phone}`, `Ген. директор: ${props.requisites.ceo}`]
   } else {
-    requisites = [`"Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРНИП: ${props.requisites.psrn}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`]
+    requisites = [`Наименование: ${props.requisites.name}`, `ИНН: ${props.requisites.itn}`, `ОГРНИП: ${props.requisites.psrn}`, `Юридический адрес: ${props.requisites.address}`, `Телефон: ${props.requisites.phone}`]
   }
   return (
     <div className='Terms'>
