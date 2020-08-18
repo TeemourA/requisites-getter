@@ -2326,4 +2326,4 @@ const terms = (props) => {
         )
 };
 
-export default terms;
+export default termsOfUse;
