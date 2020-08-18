@@ -5,12 +5,12 @@ const feedbackRequisites = (props) => {
 
   let requisites = [];
   if (props.active === 'legal') {
-      requisites = [`"Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРН: ${props.requisites.psrn}"`, `"КПП: ${props.requisites.iac}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`, `"Ген. директор: ${props.requisites.ceo}"`]
+    requisites = [`Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРН: ${props.requisites.psrn}"`, `"КПП: ${props.requisites.iac}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`, `"Ген. директор: ${props.requisites.ceo}"`]
   } else {
-      requisites = [`"Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРНИП: ${props.requisites.psrn}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`]
+    requisites = [`"Наименование: ${props.requisites.name}"`, `"ИНН: ${props.requisites.itn}"`, `"ОГРНИП: ${props.requisites.psrn}"`, `"Юридический адрес: ${props.requisites.address}"`, `"Телефон: ${props.requisites.phone}"`]
   }
   return (
-      <div className='Terms'>
+    <div className='Terms'>
       <h2 className='Terms__title'>Реквизиты (вставить в Javascript)</h2>
       <textarea name="Условия возврата" readOnly className="Terms__text" value={`
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
@@ -39,9 +39,10 @@ const feedbackRequisites = (props) => {
 });
 </script>     
       `} />
-      </div>
+    </div>
 
-  )};
+  )
+};
 
 export default feedbackRequisites;
 

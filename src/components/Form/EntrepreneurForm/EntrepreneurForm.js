@@ -1,7 +1,7 @@
 import React from 'react';
-import './EnterpreneurForm.css';
+import './EntrepreneurForm.css';
 
-const enterpreneur = (props) => {
+const entrepreneur = (props) => {
     return (
         <div className="Form" >
             <h4 className="Form__title">Список реквизитов для индивидуальных предпринимателей</h4>
@@ -40,4 +40,4 @@ const enterpreneur = (props) => {
     );
 };
 
-export default enterpreneur;
+export default entrepreneur;
