@@ -1,6 +1,7 @@
 .Documents {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     padding: 0 50px 50px 50px;
+    flex-wrap: wrap;
 }
