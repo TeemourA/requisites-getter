@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from '../components/Form/Form.js';
 import ControlPanel from '../components/ControlPanel/ControlPanel.js';
+import ReactDOM from 'react-dom'
 
 class App extends Component {
   state = {
@@ -69,3 +70,4 @@ class App extends Component {
 }
 
 export default App;
+
