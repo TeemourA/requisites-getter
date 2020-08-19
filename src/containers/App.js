@@ -47,6 +47,11 @@ class App extends Component {
     const newShown = !this.state.documentsShown;
 
     this.setState({documentsShown: newShown});
+
+    const documentsContainer = document.querySelector('#documents');
+    const scroll = () => documentsContainer.scrollIntoView({block: "start", behavior: "smooth"});
+
+    setTimeout(scroll);
   }
 
   render() {
