@@ -58,6 +58,7 @@ class App extends Component {
         />
         <Form
           active={this.state.activeForm}
+          documentsShown={this.state.documentsShown}
           requisites={this.state.requisites}
           handleChange={this.handleChange}
           handleClick={this.handleClick}

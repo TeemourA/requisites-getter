@@ -22,6 +22,7 @@ const form = (props) => {
         <Documents
             requisites={props.requisites}
             active={props.active}
+            documentsShown={props.documentsShown}
         />
     </form>
   );
