@@ -9,7 +9,7 @@ import FeedbackStyles from '../FeedbackRequisitesStyles/FeedbackRequisitesStyles
 
 const form = (props) => {
   return (
-    <div className="Documents">
+    <div className={`${props.documentsShown ? 'Documents' : 'Documents__hidden'}`}>
       {props.active === 'legal' ?
         <LegalTerms requisites={props.requisites} /> :
         <EntrepreneurTerms requisites={props.requisites} />}
