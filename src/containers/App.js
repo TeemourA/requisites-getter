@@ -62,7 +62,6 @@ class App extends Component {
           requisites={this.state.requisites}
           handleChange={this.handleChange}
           handleClick={this.handleClick}
-          documentsShown={this.state.documentsShown}
         />
       </div>
     );
