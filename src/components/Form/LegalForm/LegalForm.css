@@ -11,19 +11,19 @@
 .Form__input {
   font-family: sans-serif;
   letter-spacing: 1px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .Form__title {
   text-align: center;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   font-weight: normal;
 }
 
 .Form__group {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
 }
 
 .Form__label {
@@ -51,7 +51,7 @@
 
 .Form__input:focus~.Form__label,
 .Form__input:not(:placeholder-shown)~.Form__label {
-  top: -18px;
+  top: -8px;
   font-size: 12px;
   color: #e0e0e0;
 }
