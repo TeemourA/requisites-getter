@@ -44,8 +44,8 @@ class App extends Component {
   handleClick = (e) => {
     e.preventDefault();
     const newShown = !this.state.documentsShown;
+
     this.setState({documentsShown: newShown});
-    console.log(this.state.documentsShown)
   }
 
   render() {
