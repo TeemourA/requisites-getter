@@ -1,5 +1,7 @@
 import React from 'react';
 import './EntrepreneurForm.css';
+import Button from '../FormButton/FormButton'
+
 
 const entrepreneur = (props) => {
     return (
@@ -35,7 +37,7 @@ const entrepreneur = (props) => {
                 <input className="Form__input" type="email" inputMode="text" name="email" id="email" required placeholder=" " autoComplete="off" onChange={props.handleChange} value={props.requisites.email} />
                 <label className="Form__label" htmlFor="email">Email</label>
             </div>
-
+            <Button documentsShown={props.documentsShown} handleClick={props.handleClick}/>
         </div>
     );
 };
