@@ -16,6 +16,7 @@ class App extends Component {
       ceo: '',
       email: '',
     },
+    documentsShown: false,
   };
 
 
