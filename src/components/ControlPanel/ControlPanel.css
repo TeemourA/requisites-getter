@@ -1,13 +1,10 @@
 .Control-panel {
   display: flex;
-
   margin-bottom: 20px;
 }
 
 .Control-panel__container {
   margin: 0 auto;
-
-
 }
 
 .Control-panel__button {
