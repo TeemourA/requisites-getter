@@ -7,9 +7,22 @@ const form = (props) => {
   return (
     <form>
       {props.active === 'legal' ?
-        <Legal requisites={props.requisites} handleChange={props.handleChange} /> :
-        <Entrepreneur requisites={props.requisites} handleChange={props.handleChange} />}
-        <Documents requisites={props.requisites} active={props.active}/>
+        <Legal
+            requisites={props.requisites}
+            handleChange={props.handleChange}
+            handleClick={props.handleClick}
+            documentsShown={props.documentsShown}
+        /> :
+        <Entrepreneur
+            requisites={props.requisites}
+            handleChange={props.handleChange}
+            handleClick={props.handleClick}
+            documentsShown={props.documentsShown}
+        />}
+        <Documents
+            requisites={props.requisites}
+            active={props.active}
+        />
     </form>
   );
 };

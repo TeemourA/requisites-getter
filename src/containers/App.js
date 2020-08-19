@@ -34,11 +34,18 @@ class App extends Component {
   }
 
   handleChange = (e) => {
+    this.setState({documentsShown: false});
     const inputName = e.target.name;
     const newRequisites = { ...this.state.requisites };
     newRequisites[inputName] = e.target.value;
-
     this.setState({ requisites: newRequisites });
+  }
+
+  handleClick = (e) => {
+    e.preventDefault();
+    const newShown = !this.state.documentsShown;
+    this.setState({documentsShown: newShown});
+    console.log(this.state.documentsShown)
   }
 
   render() {
@@ -53,6 +60,8 @@ class App extends Component {
           active={this.state.activeForm}
           requisites={this.state.requisites}
           handleChange={this.handleChange}
+          handleClick={this.handleClick}
+          documentsShown={this.state.documentsShown}
         />
       </div>
     );

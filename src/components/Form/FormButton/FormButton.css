@@ -1,0 +1,28 @@
+.Button {
+  padding: 10px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s;
+  box-shadow: 0 4px 16px #ccc;
+  outline: none;
+  font-size: 18px;
+}
+
+.Button--show {
+  background: #0069d9;
+}
+
+.Button--close {
+  background: #c82333;
+}
+
+.Button--show:hover {
+  background: #08478a;
+}
+
+.Button--close:hover {
+  background: #bd2130;
+}
