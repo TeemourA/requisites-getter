@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './DocumentHolder.css';
 import EntrepreneurTerms from '../TermsOfUse/TermsOfUseEntrepreneur';
 import LegalTerms from '../TermsOfUse/TermsOfUseLegal';
@@ -7,17 +7,27 @@ import Feedback from '../FeedbackRequisites/FeedbackRequisites';
 import FeedbackStyles from '../FeedbackRequisitesStyles/FeedbackRequisitesStyles';
 
 
-const form = (props) => {
-  return (
-    <div id="documents" className={props.documentsShown ? 'Documents' : 'Documents__hidden'}>
-      {props.active === 'legal' ?
-        <LegalTerms requisites={props.requisites} /> :
-        <EntrepreneurTerms requisites={props.requisites} />}
-      <Return requisites={props.requisites} />
-      <Feedback requisites={props.requisites} active={props.active} />
-      <FeedbackStyles />
-    </div>
-  );
-};
+class DocumentsHolder extends Component {
+  docHolderRef = React.createRef();
 
-export default form;
+  componentDidUpdate(prevState) {
+    if (!prevState.documentsShown) {
+      this.docHolderRef.current.scrollIntoView({block: "start", behavior: "smooth"});
+    }
+  }
+
+  render() {
+    return (
+      <div ref={this.docHolderRef} id="documents" className={this.props.documentsShown ? 'Documents' : 'Documents__hidden'}>
+        {this.props.active === 'legal' ?
+          <LegalTerms requisites={this.props.requisites} /> :
+          <EntrepreneurTerms requisites={this.props.requisites} />}
+        <Return requisites={this.props.requisites} />
+        <Feedback requisites={this.props.requisites} active={this.props.active} />
+        <FeedbackStyles />
+      </div>
+    );
+  }
+}
+
+export default DocumentsHolder;

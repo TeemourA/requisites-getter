@@ -43,14 +43,7 @@ class App extends Component {
 
   handleClick = (e) => {
     e.preventDefault();
-    const newShown = !this.state.documentsShown;
-
-    this.setState({documentsShown: newShown});
-
-    const documentsContainer = document.querySelector('#documents');
-    const scroll = () => documentsContainer.scrollIntoView({block: "start", behavior: "smooth"});
-
-    setTimeout(scroll);
+    this.setState({documentsShown: !this.state.documentsShown});
   }
 
   render() {
